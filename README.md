@@ -8,12 +8,8 @@ file handling.
 Use the pip install to install this package:
 
 ```shell
-pip3 install https://github.com/romainmrad/rotating_logger.git
+pip install rotating-logger
 ```
-
-## UML Diagram
-
-![](img/uml_diagram.png)
 
 ## Usage
 
