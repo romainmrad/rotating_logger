@@ -20,7 +20,7 @@ pip3 install https://github.com/romainmrad/rotating_logger.git
 Import the class and instantiate it
 
 ```python
-import rotatinglogger
+from rotating_logger import rotatinglogger
 
 logger = rotatinglogger.RotatingLogger(
     backup_count=30,

@@ -10,3 +10,6 @@ __pycache__/
 
 # Mac DS_Store file
 *.DS_Store
+
+# Package
+rotating_logger.egg-info/
