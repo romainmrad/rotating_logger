@@ -1,0 +1,21 @@
+@startuml
+
+Class RotatingLogger <<Singleton>>{
+    -- Private attributes --
+    - logger
+    - formatted
+    - file_handler
+
+    -- Base methods --
+    + __init__(self, backupCount, encoding)
+    + __repr__(self)
+
+    -- Logging methods --
+    + debug(self, msg)
+    + info(self, msg)
+    + warning(self, msg)
+    + error(self, msg)
+    + critical(self, msg)
+}
+
+@enduml

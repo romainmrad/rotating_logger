@@ -3,3 +3,10 @@
 
 # Logs
 logs/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Mac DS_Store file
+*.DS_Store

@@ -6,7 +6,7 @@ from src.singleton import singleton
 
 
 @singleton
-class Logger(object):
+class RotatingLogger(object):
     """
     Logger singleton class implementing the logging mechanism:
         - ``debug()``: log at DEBUG level
@@ -15,7 +15,11 @@ class Logger(object):
         - ``error()``: log at ERROR level
         - ``critical()``: log at CRITICAL level
     """
-    def __init__(self):
+    def __init__(
+            self,
+            backup_count: int = 30,
+            encoding: str = 'utf-8',
+    ):
         """
         Constructor
         """
@@ -36,8 +40,8 @@ class Logger(object):
             self._file_handler = logging.handlers.RotatingFileHandler(
                 filename=log_file,
                 maxBytes=1000000,
-                backupCount=30,
-                encoding='utf-8'
+                backupCount=backup_count,
+                encoding=encoding
             )
             # Adding formatter to file handler, and adding file handler to logger
             self._file_handler.setFormatter(self._formatter)
