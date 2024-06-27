@@ -1,1 +1,1 @@
-from src.rotatinglogger import RotatingLogger
+from rotating_logger.src.rotatinglogger import RotatingLogger
