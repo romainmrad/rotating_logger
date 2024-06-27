@@ -2,7 +2,7 @@ import logging
 import logging.handlers
 import os
 from datetime import datetime
-from rotating_logger.singleton import singleton
+from src.singleton import singleton
 
 
 @singleton

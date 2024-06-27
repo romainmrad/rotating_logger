@@ -12,4 +12,5 @@ __pycache__/
 *.DS_Store
 
 # Package
-rotating_logger.egg-info/
+rotating_logger.egg-info/.venv
+.venv
