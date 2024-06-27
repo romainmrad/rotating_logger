@@ -1,6 +1,6 @@
 import unittest
 from unittest import TestCase
-from src.singleton import singleton
+from rotating_logger.src.singleton import singleton
 
 
 class SingletonTest(TestCase):
