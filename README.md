@@ -8,7 +8,7 @@ file handling.
 Use the pip install to install this package:
 
 ```shell
-pip install rotating-logger
+pip install git+https://github.com/romainmrad/rotating_logger.git
 ```
 
 ## Usage
